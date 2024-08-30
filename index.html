@@ -17,7 +17,7 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container"><!-- container -->
 
       <nav class="navbar">
         <ol class="navbar__list">
@@ -47,20 +47,121 @@
         <a class="content__link" href="">НАПИСАТЬ МНЕ</a>
       </div>
 
-    </div>
+    </div><!-- container end -->
   </header>
 
   <main class="main">
-
-    <section class="about">
+    <!-- ! на препроцессорах прибрати section -->
+    <!-- about -->
+    <section class="about section">
       <div class="container container--sm">
-        <h2 class="about__title">Обо мне</h2>
-        <p class="about__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br>вэб-дизайне.
+        <h2 class="about__title section__title">Обо мне</h2>
+        <p class="about__description section__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+          <br>вэб-дизайне.
+          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+        </p>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="container">
+        <h2 class="experience__title visually-hidden">My experience</h2>
+        <div class="experience__container">
+
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/images/Group.svg" alt="group">
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/images/Group.svg" alt="group">
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/images/Group.svg" alt="group">
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/images/Group.svg" alt="group">
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/images/Group.svg" alt="group">
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/images/Group.svg" alt="group">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ! на препроцессорах прибрати section -->
+    <!-- process -->
+    <section class="process section">
+      <div class="container container--sm">
+        <h2 class="process__title section__title">Как я работаю</h2>
+        <p class="process__description section__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати
+          и <br>вэб-дизайне.
           Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
       </div>
     </section>
 
+    <!-- video -->
+    <section class="video">
+      <div class="container container-sm">
+        <h2 class="video__title visually-hidden">My video title</h2>
+        <iframe class="video__iframe" width="560" height="315"
+          src="https://www.youtube.com/embed/gRtcnFlJcNo?si=xA7Z-T8Z3TSjClej" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__name">Иванов Иван</div>
+      <div class="footer__copyright">(с) 2018. Все права защищены.</div>
+    </div>
+  </footer>
 
 </body>
 
