@@ -1,0 +1,16 @@
+.footer {
+  background-color: $color-primary;
+  padding: 48px;
+  color: $color-white;
+}
+
+.footer__name {
+  font-size: 1.3125rem;
+  font-weight: 500;
+  margin-bottom: $gap-sm;
+}
+
+.footer__copyright {
+  font-size: 0.8125rem;
+  line-height: $line-height-lg;
+}
