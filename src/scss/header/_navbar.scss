@@ -1,20 +1,19 @@
-
 .navbar {
   margin-bottom: 116px;
-}
 
-.navbar__list {
-  display: flex;
-  gap: $gap-lg;
-}
+  &__list {
+    display: flex;
+    gap: $gap-lg;
+  }
 
-.navbar__link {
-  color: $color-black;
-  letter-spacing: $letter-spacing;
-  padding: $gap-sm 3px $gap-sm 0;
-}
+  &__link {
+    color: $color-black;
+    letter-spacing: $letter-spacing;
+    padding: $gap-sm 3px $gap-sm 0;
 
-.navbar__link--active {
-  color: $color-primary;
-  font-weight: 500;
+    &--active {
+      color: $color-primary;
+      font-weight: 500;
+    }
+  }
 }

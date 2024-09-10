@@ -1,33 +1,32 @@
-
 .experience {
   background-color: $color-primary;
   color: $color-white;
   padding: 100px 0 96px;
-}
 
-.experience__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: $gap-md;
+  &__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: $gap-md;
+  }
 }
 
 .experience-item {
   display: flex;
   gap: $gap;
-}
 
-.experience-item__description {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
 
-.experience-item__number {
-  font-size: 1.3125rem;
-  font-weight: 500;
-}
+  &__number {
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
 
-.experience-item__image {
-  order: -1;
+  &__image {
+    order: -1;
+  }
 }
