@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 .process {
   padding-top: 112px;
   padding-bottom: 50px;

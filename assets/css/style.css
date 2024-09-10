@@ -319,6 +319,30 @@ a {
   line-height: 1.64;
 }
 
+.process {
+  padding-top: 112px;
+  padding-bottom: 50px;
+
+  background-color: #eeeff1;
+}
+.process__title {
+  margin-bottom: 39px;
+
+  text-align: center;
+
+  color: #000000;
+
+  font-size: 2rem;
+  font-weight: 500;
+}
+.process__description {
+  text-align: center;
+
+  color: #727272;
+
+  line-height: 1.64;
+}
+
 .experience {
   padding: 100px 0 96px;
 
@@ -364,30 +388,6 @@ a {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
-}
-
-.process {
-  padding-top: 112px;
-  padding-bottom: 50px;
-
-  background-color: #eeeff1;
-}
-.process__title {
-  margin-bottom: 39px;
-
-  text-align: center;
-
-  color: #000000;
-
-  font-size: 2rem;
-  font-weight: 500;
-}
-.process__description {
-  text-align: center;
-
-  color: #727272;
-
-  line-height: 1.64;
 }
 
 .video {

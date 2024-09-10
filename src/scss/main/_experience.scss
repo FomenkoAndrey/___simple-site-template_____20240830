@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 .experience {
   background-color: $color-primary;
   color: $color-white;

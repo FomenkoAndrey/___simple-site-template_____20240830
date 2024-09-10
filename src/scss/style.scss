@@ -1,17 +1,4 @@
-@import "presets/skin";
-@import "presets/variables";
-
-@import "common/normalize";
-@import "common/typography";
-@import "common/classes";
-
-@import "header/header";
-@import "header/navbar";
-@import "header/content";
-
-@import "main/about";
-@import "main/experience";
-@import "main/process";
-@import "main/video";
-
-@import "footer/footer";
+@use "common";
+@use "header";
+@use "main";
+@use "footer";
