@@ -6,7 +6,8 @@
 
   &__list {
     display: flex;
-    gap: $gap-lg;
+    flex-wrap: wrap;
+    gap: $gap-sm $gap-lg;
   }
 
   &__link {

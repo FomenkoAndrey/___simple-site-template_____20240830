@@ -7,12 +7,20 @@
   max-width: 540px;
   align-items: flex-start;
 
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
+
   &__title {
     font-size: 3rem;
     font-weight: 500;
     background-color: $color-gray-light;
     line-height: $line-height-lg;
     margin-bottom: 35px;
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
   }
 
   &__description {
@@ -31,6 +39,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $sm) {
+      font-size: 1.5rem;
+    }
   }
 }
-
