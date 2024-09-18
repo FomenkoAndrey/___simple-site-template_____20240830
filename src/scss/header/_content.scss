@@ -4,11 +4,14 @@
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 540px;
   align-items: flex-start;
 
-  @media (max-width: $sm) {
+  @include md-min {
+    max-width: 540px;
+  }
+  @include md {
     max-width: 100%;
+    align-items: stretch;
   }
 
   &__title {
@@ -18,8 +21,8 @@
     line-height: $line-height-lg;
     margin-bottom: 35px;
 
-    @media (max-width: $sm) {
-      width: 100%;
+    @include md {
+      text-align: center;
     }
   }
 
@@ -40,8 +43,8 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: $sm) {
-      font-size: 1.5rem;
+    @include md {
+      align-self: center;
     }
   }
 }

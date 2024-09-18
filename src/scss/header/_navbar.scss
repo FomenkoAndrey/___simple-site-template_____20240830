@@ -2,17 +2,31 @@
 @use "../mixins" as *;
 
 .navbar {
-  margin-bottom: 116px;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $gap-sm $gap-lg;
+    @include md-min {
+      margin-bottom: 116px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: $gap-sm $gap-lg;
+    }
+    @include md {
+      display: none;
+      text-align: center;
+      background-color: $color-light;
+      margin-top: $gap;
+    }
+
+    &.active {
+      display: block;
+    }
   }
 
   &__link {
     color: $color-black;
     letter-spacing: $letter-spacing;
+    display: block;
+
     padding: $gap-sm 3px $gap-sm 0;
 
     &--active {
@@ -20,4 +34,63 @@
       font-weight: 500;
     }
   }
+
+  &__btn-trigger {
+    width: 30px;
+    height: 23px;
+    position: relative;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    @include md-min {
+      display: none;
+    }
+
+    &-row {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: $color-black;
+      border-radius: 2px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+
+    &.active span {
+      &:nth-child(1) {
+        top: 9px;
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        left: -30px;
+      }
+
+      &:nth-child(3) {
+        top: 9px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
 }
+
+
+

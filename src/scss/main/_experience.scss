@@ -9,14 +9,34 @@
   &__flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: $gap-md;
+
+    @include sm-min {
+      justify-content: space-between;
+    }
+    @include sm {
+      justify-content: center;
+    }
   }
 }
 
 .experience-item {
   display: flex;
+  justify-content: center;
   gap: $gap;
+
+  @include xl-min {
+    flex-basis: 0;
+  }
+  @include xl-md {
+    flex-basis: 25%;
+  }
+  @include md-sm {
+    flex-basis: 40%;
+  }
+  @include sm {
+    flex-basis: 70%;
+  }
 
   &__description {
     display: flex;
